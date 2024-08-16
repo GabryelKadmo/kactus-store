@@ -1,4 +1,3 @@
-import React from "react";
 import tenisPreto1 from './assets/images/TenisPreto1.png';
 import tenisRosa1 from './assets/images/TenisRosa1.png';
 import tenisazul1 from './assets/images/TenisAzul1.png';

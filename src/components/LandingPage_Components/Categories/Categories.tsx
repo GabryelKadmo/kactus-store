@@ -1,4 +1,3 @@
-import React from "react";
 import KitsPromocionais from './assets/images/KitsPromocionais.png';
 import Masculinos from './assets/images/Masculinos.png';
 import Femininos from './assets/images/Femininos.png';
