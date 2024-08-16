@@ -48,14 +48,14 @@ export default function MostSoldItems() {
 
     return (
         <div className="flex flex-col items-center justify-center w-full">
-            <p className="text-4xl font-[Poppins] font-semibold w-2/3 mb-4">MAIS VENDIDOS</p>
+            <p className="text-4xl font-[Poppins] font-semibold w-2/3">MAIS VENDIDOS</p>
             <div className="flex items-center justify-center mt-10 mb-28 w-2/3">
                 <Carousel className="w-full">
                     <CarouselContent className="flex">
                         {items.map((item, index) => (
                             <CarouselItem
                                 key={index}
-                                className="flex-none w-1/2 p-2 sm:w-1/4 sm:p-4"
+                                className="flex-none w-1/2 p-2 sm:w-1/4 sm:p-4 transition duration-300 ease-in-out transform hover:scale-105"
                             >
                                 <div className="bg-white shadow-lg rounded-lg overflow-hidden">
                                     <div className="flex justify-center items-center h-36 sm:h-52">
