@@ -45,6 +45,7 @@ export default function MostSoldItems() {
             freeShipping: "Frete grátis",
         },
     ];
+
     return (
         <div className="flex flex-col items-center justify-center w-full">
             <p className="text-4xl font-[Poppins] font-semibold w-2/3 mb-4">MAIS VENDIDOS</p>
@@ -61,7 +62,11 @@ export default function MostSoldItems() {
                                         <img src={item.image} alt={item.title} className="object-contain h-full" />
                                     </div>
                                     <div className="p-2 sm:p-4">
-                                        <h3 className="text-base sm:text-xl font-semibold mb-1 sm:mb-2 truncate w-full" style={{ maxWidth: '12rem' }}>
+                                        <h3 
+                                            className="text-base sm:text-xl font-semibold mb-1 sm:mb-2 truncate w-full" 
+                                            style={{ maxWidth: '12rem' }} 
+                                            title={item.title}
+                                        >
                                             {item.title}
                                         </h3>
                                         <div className='flex flex-row gap-1 sm:gap-2'>
