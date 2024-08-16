@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import tenisPreto1 from './assets/images/TenisPreto1.png';
 import tenisRosa1 from './assets/images/TenisRosa1.png';
 import tenisazul1 from './assets/images/TenisAzul1.png';
@@ -45,14 +45,6 @@ export default function MostSoldItems() {
             installments: "12x de R$ 16,11",
             freeShipping: "Frete grátis",
         },
-        // {
-        //     image: "/path-to-image5.jpg",
-        //     title: "Produto 5",
-        //     currentPrice: "R$ 399,99",
-        //     oldPrice: "R$ 499,99",
-        //     installments: "10x de R$ 39,99",
-        //     freeShipping: "Frete grátis",
-        // },
     ];
     return (
         <div className="flex flex-col items-center justify-center w-full">
@@ -61,22 +53,24 @@ export default function MostSoldItems() {
                 <Carousel className="w-full">
                     <CarouselContent className="flex">
                         {items.map((item, index) => (
-                            <CarouselItem 
-                                key={index} 
-                                className="flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4"
+                            <CarouselItem
+                                key={index}
+                                className="flex-none w-1/2 p-2 sm:w-1/4 sm:p-4"
                             >
                                 <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-                                    <div className="flex justify-center items-center min-w-56 h-52">
-                                        <img src={item.image} alt={item.title} className="object-cover" />
+                                    <div className="flex justify-center items-center h-36 sm:h-52">
+                                        <img src={item.image} alt={item.title} className="object-contain h-full" />
                                     </div>
-                                    <div className="p-4">
-                                        <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                                        <div className='flex flex-row gap-2'>
-                                            <p className="text-lg font-semibold">{item.currentPrice}</p>
-                                            <p className="text-sm text-red-500 line-through">{item.oldPrice}</p>
+                                    <div className="p-2 sm:p-4">
+                                        <h3 className="text-base sm:text-xl font-semibold mb-1 sm:mb-2 truncate w-full" style={{ maxWidth: '12rem' }}>
+                                            {item.title}
+                                        </h3>
+                                        <div className='flex flex-row gap-1 sm:gap-2'>
+                                            <p className="text-sm sm:text-lg font-semibold">{item.currentPrice}</p>
+                                            <p className="text-xs sm:text-sm text-red-500 line-through">{item.oldPrice}</p>
                                         </div>
-                                        <p className="text-sm font-normal">{item.installments}</p>
-                                        <p className="text-green-500 text-md font-semibold">{item.freeShipping}</p>
+                                        <p className="text-xs sm:text-sm font-normal">{item.installments}</p>
+                                        <p className="text-green-500 text-xs sm:text-md font-semibold">{item.freeShipping}</p>
                                     </div>
                                 </div>
                             </CarouselItem>
