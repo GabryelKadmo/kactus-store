@@ -15,7 +15,7 @@ export default function Header() {
   const [isCartOpen, setIsCartOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between p-2">
         <img src={KactusLogo} className="h-14" alt="Logo" />
         <div className="lg:hidden flex items-center space-x-4">
