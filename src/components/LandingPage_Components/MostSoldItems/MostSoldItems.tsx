@@ -55,7 +55,7 @@ export default function MostSoldItems() {
                         {items.map((item, index) => (
                             <CarouselItem
                                 key={index}
-                                className="flex-none w-1/2 p-2 sm:w-1/4 sm:p-4 transition duration-300 ease-in-out transform hover:scale-105"
+                                className="flex-none w-1/2 p-2 sm:w-1/4 sm:p-4 ml-2 mr-4 transition duration-300 ease-in-out transform hover:scale-105"
                             >
                                 <div className="bg-white shadow-lg rounded-lg overflow-hidden">
                                     <div className="flex justify-center items-center h-36 sm:h-52">
