@@ -45,7 +45,7 @@ export default function Categories() {
                                 key={index}
                                 className="flex-none w-1/2 p-2 sm:w-1/4 sm:p-4"
                             >
-                                <div className="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
+                                <div className="bg-white shadow-lg rounded-lg ml-2 overflow-hidden transition duration-300 ease-in-out transform hover:scale-105">
                                     <div className="flex justify-center items-center h-36 sm:h-64">
                                         <img src={item.image} alt={item.title} className="object-cover" />
                                     </div>
