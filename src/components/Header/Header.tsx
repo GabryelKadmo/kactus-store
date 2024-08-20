@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   Sheet,
   SheetContent,
@@ -10,6 +11,7 @@ import { RiShoppingCart2Line } from "react-icons/ri";
 import { FaUser } from "react-icons/fa";
 import KactusLogo from "./assets/images/actu’s.svg";
 import emptyCart from "./assets/images/Seu carrinho está vazio.svg";
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -30,7 +32,7 @@ export default function Header() {
                 <SheetTitle>Carrinho</SheetTitle>
               </SheetHeader>
               <div className="p-4">
-                <img src={emptyCart} alt="Seu carrinho esta vazio" />
+                <img src={emptyCart} alt="Seu carrinho está vazio" />
               </div>
             </SheetContent>
           </Sheet>
@@ -50,9 +52,9 @@ export default function Header() {
                 <SheetTitle>Menu</SheetTitle>
               </SheetHeader>
               <nav className="flex flex-col space-y-4 py-4">
-                <a href="#" className="text-gray-600">Home</a>
-                <a href="#" className="text-gray-600">Produtos</a>
-                <a href="#" className="text-gray-600">Novidades</a>
+                <Link to="/" className="text-gray-600">Home</Link>
+                <Link to="/produtos" className="text-gray-600">Produtos</Link>
+                <Link to="Novidades" className="text-gray-600">Novidades</Link>
               </nav>
             </SheetContent>
           </Sheet>
@@ -60,9 +62,9 @@ export default function Header() {
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-center">
           <nav className="flex space-x-8 font-Montserrat">
-            <a href="#" className="text-gray-600 hover:text-gray-800 hover:underline underline-offset-1">Home</a>
-            <a href="#" className="text-gray-600 hover:text-gray-800 hover:underline underline-offset-1">Produtos</a>
-            <a href="#" className="text-gray-600 hover:text-gray-800 hover:underline underline-offset-1">Novidades</a>
+            <Link to="/" className="text-gray-600 hover:text-gray-800 hover:underline underline-offset-1">Home</Link>
+            <Link to="/produtos" className="text-gray-600 hover:text-gray-800 hover:underline underline-offset-1">Produtos</Link>
+            <Link to="Novidades" className="text-gray-600 hover:text-gray-800 hover:underline underline-offset-1">Novidades</Link>
           </nav>
         </div>
 
@@ -78,7 +80,7 @@ export default function Header() {
                 <SheetTitle>Carrinho</SheetTitle>
               </SheetHeader>
               <div className="p-4">
-                <img src={emptyCart} alt="Seu carrinho esta vazio" />
+                <img src={emptyCart} alt="Seu carrinho está vazio" />
               </div>
             </SheetContent>
           </Sheet>
