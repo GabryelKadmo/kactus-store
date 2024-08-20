@@ -1,13 +1,17 @@
-// import React from 'react'
-import Footer from "./components/Footer/Footer"
-import Header from "./components/Header/Header"
-import LandingPage from "./pages/LandingPage/LandingPage"
+// App.js
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from './Routes/routes';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+
 export default function App() {
   return (
-    <div className="bg-zinc-100">
-      <Header />
-      <LandingPage />
-      <Footer />
-    </div>
-  )
+    <Router>
+      <div className="bg-zinc-100">
+        <Header />
+        <AppRoutes />
+        <Footer />
+      </div>
+    </Router>
+  );
 }
