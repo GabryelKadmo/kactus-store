@@ -302,7 +302,7 @@ export default function ProductsPage() {
                 ))}
               </div>
               <button className="mt-2 px-4 py-1 w-full transition duration-300 bg-green-700 text-white rounded-2xl hover:bg-green-600">
-                Filtrar
+                Ver produto
               </button>
             </div>
           ))}
