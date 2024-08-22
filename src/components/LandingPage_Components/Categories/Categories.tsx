@@ -19,15 +19,15 @@ export default function Categories() {
         },
         {
             image: Masculinos,
-            title: "Air Jordan Pink",
+            title: "Masculinos",
         },
         {
             image: Femininos,
-            title: "Air Jordan Blue",
+            title: "Femininos",
         },
         {
             image: Fitness,
-            title: "Air Force One White",
+            title: "Fitness",
         },
         {
             image: Meias,
@@ -50,8 +50,8 @@ export default function Categories() {
                                         <img src={item.image} alt={item.title} className="object-cover" />
                                     </div>
                                     <div className="p-2 sm:p-4 text-center">
-                                        <h3 
-                                            className="text-base sm:text-xl font-bold mb-1 sm:mb-2 truncate w-full" 
+                                        <h3
+                                            className="text-base sm:text-xl font-bold mb-1 sm:mb-2 truncate w-full"
                                             style={{ maxWidth: '12rem' }}
                                             title={item.title}
                                         >
